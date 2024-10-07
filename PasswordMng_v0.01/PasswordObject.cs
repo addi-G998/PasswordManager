@@ -98,7 +98,7 @@ namespace PasswordMng_v0._01
         {
             Encryption enc = new Encryption();
             byte[] salt = enc.GenerateRandomSalt();
-            byte[] key = enc.GenerateKeyFromPassword(masterpass, salt, 1000, 16);
+            byte[] key = enc.GenerateKeyFromPassword(masterpass, salt, 3, 16);
 
             return key;
         }
