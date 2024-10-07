@@ -1,0 +1,16 @@
+﻿<Window x:Class="PasswordMng_v0._01.Create_MPass"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordMng_v0._01"
+        mc:Ignorable="d"
+        Title="Create_MPass" Height="305" Width="579" WindowStyle="None">
+    <Grid>
+        <Label Content="Create a Strong Password" Margin="198,32,165,218" FontSize="16"/>
+        <TextBox x:Name="PassBox" Margin="198,92,183,179" FontSize="16" />
+        <TextBox x:Name="RPassBox" Margin="198,189,183,82" FontSize="16"/>
+        <Label Content="Repeat Password" Margin="216,133,201,121" FontSize="16"/>
+        <Button x:Name="createBtn" Margin="221,242,217,24" Content="Create" FontSize="14" Click="createBtn_Click"/>
+    </Grid>
+</Window>

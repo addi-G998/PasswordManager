@@ -1,0 +1,29 @@
+﻿<Window x:Class="PasswordMng_v0._01.Editor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasswordMng_v0._01"
+        mc:Ignorable="d"
+        Title="Editor" Height="358" Width="619" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <TextBox x:Name="idBox" HorizontalAlignment="Left" Margin="348,56,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="242" Height="33"/>
+        <TextBox x:Name="userBox" HorizontalAlignment="Left" Margin="348,146,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="242" Height="33"/>
+        <TextBox x:Name="passBox" HorizontalAlignment="Left" Margin="348,234,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="242" Height="33"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="145,56,0,0" VerticalAlignment="Top" Height="33" Width="88" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="145,146,0,0" VerticalAlignment="Top" Height="32" Width="88" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="145,235,0,0" VerticalAlignment="Top" Height="32" Width="88" FontSize="16" FontWeight="Bold"/>
+        <Border x:Name="confirmBtn" BorderBrush="Black" BorderThickness="1" Margin="348,306,170,10" CornerRadius="8" Background="#FFE2E2E2" MouseDown="confirmBtn_Click">
+            <StackPanel>
+                <Label Content="Confirm" Margin="27,4,-28,-2" FontSize="14"/>
+            </StackPanel>
+        </Border>
+        <Border x:Name="cancelBtn" BorderBrush="Black" BorderThickness="1" Margin="138,306,379,10" CornerRadius="8" Background="#FFE2E2E2" MouseDown="cancelBtn_Click">
+            <StackPanel>
+                <Label Content="Cancel" Margin="27,4,-28,-2" FontSize="14"/>
+            </StackPanel>   
+            
+        </Border>
+
+    </Grid>
+</Window>
